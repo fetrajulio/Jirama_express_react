@@ -8,6 +8,9 @@ interface IIprops{
     }
     
 }
+function idrandom(min:number,max:number){
+    return Math. floor(Math. random()*(max-min+1)+min);
+    }
 const Lits = (props: IIprops) =>{
     const {Name,listes} =props.tab;
     return <div>
@@ -19,19 +22,27 @@ const Lits = (props: IIprops) =>{
                 <div className="col-3">Prix</div>
             </div>
         </a>
-        <a href="#" className="list-group-item list-group-item-action">
-            <div className="row">
-                <div className="col-2">0</div>
-                <div className="col-4">julio</div>
-                <div className="col-3">5555</div>
-                <div className="col-3">1346</div>
+        {listes.map((i)=>( 
+            <div>
+                <a href="#" className="list-group-item list-group-item-action">
+                    <div className="row">
+                        <div className="col-2">{idrandom(0,30)}</div>
+                        <div className="col-4">{i.nom}</div>
+                        <div className="col-3">{i.num}</div>
+                        <div className="col-3">{i.prix}Ar  
+                        
+                        <span className="badge bg-primary">Non Payer</span></div>
+                    </div>
+                </a>
+                
             </div>
-        </a>
-        <div>
-            {listes.map((i)=>( 
-            <div>{i.nom}</div>)
+            
+            )
             
             )}
+        
+        <div>
+           
         </div>
     </div>
 }

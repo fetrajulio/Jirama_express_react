@@ -5,6 +5,7 @@ import {AppProps, AppStates} from "../../server/domain/IApp";
 import {ITest} from "../../server/domain/ITest";
 import {Put, Post, Get, Delete} from "../Services";
 
+import PropTypes from 'prop-types';
 export default class App extends React.Component<AppProps, AppStates> {
     state: AppStates = {
         username: '',
