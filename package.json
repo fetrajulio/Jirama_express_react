@@ -9,6 +9,7 @@
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "server": "tsc -p tsconfig.server.json && node server/",
     "alefa": "concurrently \"nodemon\" \"npm run client\"",
+    "alefao": "concurrently \"nodemon\" \"npm run client\"",
     "server-dev": "nodemon"
   },
   "author": "Elias Rahmani",
@@ -62,4 +63,6 @@
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.3"
   }
+  
 }
+
