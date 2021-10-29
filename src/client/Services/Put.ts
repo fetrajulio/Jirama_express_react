@@ -1,3 +1,4 @@
+//set sur admin inscription
 export default async function Put(
     url: string,
     body: Record<string, unknown>,
