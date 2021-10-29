@@ -11,9 +11,27 @@ interface IIprops{
 const Lits = (props: IIprops) =>{
     const {Name,listes} =props.tab;
     return <div>
-        <h1>{Name}</h1>
+        <a href="#" className="list-group-item list-group-item-action active">
+            <div className="row">
+                <div className="col-2">id</div>
+                <div className="col-4">Nom</div>
+                <div className="col-3">Num Conteur</div>
+                <div className="col-3">Prix</div>
+            </div>
+        </a>
+        <a href="#" className="list-group-item list-group-item-action">
+            <div className="row">
+                <div className="col-2">0</div>
+                <div className="col-4">julio</div>
+                <div className="col-3">5555</div>
+                <div className="col-3">1346</div>
+            </div>
+        </a>
         <div>
-            {listes.map((i)=>( <div>{i.nom}</div>))}
+            {listes.map((i)=>( 
+            <div>{i.nom}</div>)
+            
+            )}
         </div>
     </div>
 }
