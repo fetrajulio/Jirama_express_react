@@ -1,3 +1,4 @@
+//affichage en adimi
 export default async function Get(
     url: string,
     headers:Record<string, unknown> = {}
