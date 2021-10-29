@@ -1,3 +1,4 @@
+//deletion en admin
 export default async function Delete(
     url: string,
     body: Record<string, unknown>,
